@@ -1,5 +1,7 @@
 import { parse } from "pg-connection-string";
 
+console.log("process.env.DATABASE_URL", process.env.DATABASE_URL);
+
 export default () => {
   const config = parse(process.env.DATABASE_URL);
   return {
