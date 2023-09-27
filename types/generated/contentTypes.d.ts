@@ -373,8 +373,8 @@ export interface ApiDocumentDocument extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    body: Attribute.Text;
-    users_permissions_user: Attribute.Relation<
+    content: Attribute.Text;
+    user: Attribute.Relation<
       'api::document.document',
       'oneToOne',
       'plugin::users-permissions.user'
